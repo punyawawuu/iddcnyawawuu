@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <!-- Group for emblem -->
+  <g transform="translate(5, 0)">
+    <!-- Blue inner circle -->
+    <circle cx="40" cy="40" r="19" fill="#0066b3" />
+    
+    <!-- White circuit tree inside blue circle -->
+    <!-- Trunk -->
+    <line x1="40" y1="59" x2="40" y2="30" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <!-- Left branch -->
+    <path d="M 40 46 L 31 39 L 31 33" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Right branch -->
+    <path d="M 40 46 L 49 39 L 49 33" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Circles at the ends -->
+    <circle cx="40" cy="30" r="3" fill="#ffffff" />
+    <circle cx="31" cy="33" r="3" fill="#ffffff" />
+    <circle cx="49" cy="33" r="3" fill="#ffffff" />
+    
+    <!-- Green outer C ring -->
+    <path d="M 61 22 A 28 28 0 1 0 67 32" fill="none" stroke="#005A36" stroke-width="7.5" stroke-linecap="round" />
+  </g>
+  
+  <!-- Text "IDDC" -->
+  <text x="100" y="54" font-family="'Nunito Sans', 'Inter', 'Outfit', sans-serif" font-size="46" font-weight="800" fill="#005A36" letter-spacing="-1">IDDC</text>
+</svg>
