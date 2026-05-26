@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=Literata:opsz,wght@7..72,400;7..72,700&amp;family=Nunito+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#444c1c",
+                    "secondary-container": "#d3e8d1",
+                    "tertiary-fixed-dim": "#dfe8a8",
+                    "on-tertiary": "#f5ffbd",
+                    "on-secondary": "#eaffe7",
+                    "on-tertiary-container": "#565e2c",
+                    "surface-bright": "#f8faf3",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#e9ffe7",
+                    "secondary-fixed-dim": "#c5dac4",
+                    "on-surface-variant": "#596158",
+                    "surface-tint": "#3c6944",
+                    "on-tertiary-fixed-variant": "#606935",
+                    "primary-fixed-dim": "#afe1b2",
+                    "primary-dim": "#305c38",
+                    "background": "#f8faf3",
+                    "inverse-on-surface": "#9b9e98",
+                    "secondary-fixed": "#d3e8d1",
+                    "error": "#a73b21",
+                    "secondary-dim": "#455846",
+                    "outline-variant": "#acb4a9",
+                    "primary": "#3c6944",
+                    "outline": "#757d73",
+                    "tertiary": "#5b6331",
+                    "on-secondary-fixed": "#324433",
+                    "tertiary-dim": "#4f5726",
+                    "secondary": "#516452",
+                    "surface-container-low": "#f0f5ec",
+                    "on-secondary-container": "#445645",
+                    "error-container": "#fd795a",
+                    "tertiary-fixed": "#edf7b6",
+                    "surface-container-high": "#e4eae0",
+                    "error-dim": "#791903",
+                    "inverse-surface": "#0b0f0b",
+                    "surface-dim": "#d4dcd1",
+                    "surface-container-highest": "#dde5d9",
+                    "surface": "#f8faf3",
+                    "inverse-primary": "#cafecd",
+                    "tertiary-container": "#edf7b6",
+                    "on-surface": "#2d342d",
+                    "on-primary-fixed-variant": "#386540",
+                    "surface-container": "#eaf0e6",
+                    "on-error-container": "#6e1400",
+                    "on-secondary-fixed-variant": "#4e604e",
+                    "on-primary-fixed": "#1b4826",
+                    "on-error": "#fff7f6",
+                    "on-background": "#2d342d",
+                    "primary-container": "#bcefc0",
+                    "on-primary-container": "#2e5b37",
+                    "surface-variant": "#dde5d9",
+                    "primary-fixed": "#bcefc0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Literata", "serif"],
+                    "body": ["Nunito Sans", "sans-serif"],
+                    "label": ["Nunito Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Nunito Sans', sans-serif; line-height: 1.6; }
+        h1, h2, h3, .font-serif { font-family: 'Literata', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/50 shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-3">
+<img alt="IDDC Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugC4muM14Ubc8vkFPIz3ZER83EM2zt7YxmTEYpy-aocC4GgBgqkDBb_5TqirK1edP4AzG46PsQvjtWvr6w7z1IhJVowUD2BIEVesnMyRbseGi0yEz_MF_GWb71jpdYn9jrbF_wl728-HcH_281KGka__-wXuS3Rl47cLnxpWKAJ-or1gF0PEWqkhojL4tQCz-9pRoShKbrAjvcTQjZbArIKIJsImPWrog1B5ycrL5u0GVExTLXDXtYqlOpiskyqSCcdAyXbtP1E"/>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-stone-600 font-medium hover:text-emerald-800 transition-colors" href="#">Profil</a>
+<a class="text-stone-600 font-medium hover:text-emerald-800 transition-colors" href="#">Akademik</a>
+<a class="text-emerald-700 font-bold border-b-2 border-emerald-700 pb-1" href="#">Ekstra</a>
+<a class="text-stone-600 font-medium hover:text-emerald-800 transition-colors" href="#">Kolaborasi</a>
+<a class="text-stone-600 font-medium hover:text-emerald-800 transition-colors" href="#">PMB</a>
+<a class="text-stone-600 font-medium hover:text-emerald-800 transition-colors" href="#">Karya</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-semibold hover:opacity-90 transition-all active:scale-95 duration-150">
+                Dukungan
+            </button>
+</div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<header class="relative px-8 pt-12 pb-24 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 space-y-6">
+<span class="inline-block px-4 py-1.5 bg-tertiary-container text-on-tertiary-container rounded-full text-sm font-bold tracking-wide">EKSTRAKURIKULER</span>
+<h1 class="text-5xl md:text-7xl font-bold text-primary leading-tight">Melampaui Batas Kreativitas &amp; Spiritual.</h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                        Di IDDC, kami percaya bahwa desain yang bermakna lahir dari jiwa yang tenang dan pemikiran yang kritis. Program ekstrakurikuler kami dirancang untuk menyeimbangkan keahlian teknis dengan kedalaman iman.
+                    </p>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-xl transform rotate-2">
+<img class="w-full h-full object-cover" data-alt="Young Muslim students in a modern creative studio workspace, collaborating on design projects with warm natural light through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZE0IsiTc8lrxWqPsAGbMVabqvKULzp7pbwPhByXnFFxb-feOjhhx2ZrqFXbHRrIkWqSur3ZtTSoiRQfZ5IVGKJvJd-ASIspzHQ2BdQVUX5doXGjSldHwIdJgI6SdblaFOTlLOs6YYh3mvPehcIeRO2bWBFb-JMf072mmllMi8VzJhM3uRBDxTHtfUS8hWDITBr6Qw98lTPFMM5_iNIdM9uUbJ48xE0LhNUX51ryBN4S3Sdz6__yJYmbff0wbsx5c0wZzbksor1ao"/>
+</div>
+<div class="absolute -bottom-8 -left-8 aspect-square w-48 rounded-2xl overflow-hidden border-8 border-surface shadow-2xl transform -rotate-6">
+<img class="w-full h-full object-cover" data-alt="Close up of artistic calligraphy pens and design tools on a rustic wooden desk with warm cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqN9Zj8sjw0c3JzmrinDQLIhiVW6XLSJTrRb-eLMKCv3-WMxE-_tY9qBxWdULYaSOoK8jCJitTznHjpea7SvVZbYC-oPjGXS8nGy_EeRBXMS08tBXG9-MBtxiRIB_jsNW5X-lHOz3evIg0nJls9tZIwoRrO-Pf33l0TodROiGGsaSW6tbCbeKR3V12sFCad5hNxp7U45qy3KHv2xHMKaZzPJwD0OgIsqubMTZa6ZoWwa4XOxcq7w1GBYwGLh6FSjd2C9dfNvKXclc"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Activities Grid (Bento Style) -->
+<section class="px-8 py-12 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Rihlah Desain Card -->
+<div class="md:col-span-8 bg-surface-container-low rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-center overflow-hidden">
+<div class="w-full md:w-1/2 space-y-4">
+<div class="flex items-center gap-3 text-tertiary">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-bold uppercase tracking-widest text-xs">Petualangan &amp; Inspirasi</span>
+</div>
+<h2 class="text-3xl font-bold text-on-surface">Rihlah Desain</h2>
+<p class="text-on-surface-variant">Menemukan kebesaran Sang Pencipta melalui arsitektur, alam, dan budaya. Perjalanan mencari inspirasi visual yang berakar pada nilai-nilai ketauhidan.</p>
+<ul class="space-y-2 pt-4">
+<li class="flex items-center gap-2 text-primary font-medium">
+<span class="material-symbols-outlined text-lg" data-icon="check_circle">check_circle</span> Studi Lapangan Arsitektur Islami
+                            </li>
+<li class="flex items-center gap-2 text-primary font-medium">
+<span class="material-symbols-outlined text-lg" data-icon="check_circle">check_circle</span> Sketsa Alam Terbuka
+                            </li>
+</ul>
+</div>
+<div class="w-full md:w-1/2 h-full min-h-[300px]">
+<img class="w-full h-full object-cover rounded-2xl" data-alt="Group of creative students standing before a beautiful historic mosque facade at sunset, holding sketchbooks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGbdlDT8M_yLtHd74BOvi9QVQRau43bRzsj3cS00pBeQtx8Ps3uVkZKyRCjLv7LeH_AV7Wzg-h5P9wuVPKM6ufTiG8NolV8b2gBZjluQdy0umO7bIhoE1dauttyUwVh287o19xSjtGWBcnpEfoKAhGbj5sK5FkKktgb_XXZuFFF26MO4fP7Pyx1Y6Yb_d4kAOcCeKmkKQFL-zVPbbabGVCedI25WV6SardzzJIOjStfLb1_WAONcIiB7Z3EYlHKFPv2sM4e8r7Mi0"/>
+</div>
+</div>
+<!-- Spiritual Card -->
+<div class="md:col-span-4 bg-primary text-on-primary rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group">
+<div class="z-10">
+<div class="bg-primary-fixed-dim/20 w-12 h-12 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary-fixed-dim" data-icon="self_improvement">self_improvement</span>
+</div>
+<h2 class="text-3xl font-bold mb-4">Aktivitas Spiritual</h2>
+<p class="text-primary-container leading-relaxed">Tahajjud berjamaah, halaqah Quran, dan kajian filosofi seni dalam Islam untuk mengisi relung hati.</p>
+</div>
+<div class="mt-12 z-10">
+<button class="bg-on-primary text-primary px-6 py-3 rounded-full font-bold hover:bg-secondary-container transition-colors w-full">Bergabung Sekarang</button>
+</div>
+<!-- Decorative overlay -->
+<div class="absolute -bottom-10 -right-10 opacity-20 transform group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[12rem]" data-icon="dark_mode" style="font-variation-settings: 'FILL' 1;">dark_mode</span>
+</div>
+</div>
+<!-- Student Org Card -->
+<div class="md:col-span-4 bg-surface-container-highest rounded-3xl p-8 flex flex-col justify-between border border-outline-variant/30">
+<div>
+<div class="flex items-center gap-2 mb-4 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="text-sm font-bold uppercase tracking-widest">Kepemimpinan</span>
+</div>
+<h2 class="text-2xl font-bold text-on-surface mb-4">Organisasi Santri (OS-IDDC)</h2>
+<p class="text-on-surface-variant mb-6 text-sm">Wadah aktualisasi diri dalam memimpin, mengelola acara kreatif, dan membangun jejaring antar lembaga.</p>
+</div>
+<div class="flex -space-x-4">
+<div class="w-12 h-12 rounded-full border-4 border-surface bg-stone-300 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a smiling young student in casual wear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmLtxggPH758zxnJPzHEPkyzMHYu_hjwQVaCHXFnbxc7NegxqXcQkhPWJT64W_KtoysqPYEroHgOm_MfXn-SRH18RUGwOp0JPv4yUXeEgtNfEb6gEx9Mxqsmtmqgdey_lw_0FmJdbcTH9sF15aLJugy5baHDCik94JoX5BF0-RCxn7I86JSlbNbHMfDHcuQLiI_xIn5_YQXxgzf7CWVIarmr8nDcXLrSmoS1TfIQRfxz1h58qU77I4cocvHP25QFqLplgUnNVEwD4"/>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-surface bg-stone-300 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a creative woman with glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2B8cat6Ab1d7T4SQ84ZmRlVKTLLHvyLNo8c7pdYnaY-DhBKmd_qYmrSs2mPehIxk_lekwnMqNzaQEuirvItvVSQoEJpEgPq959VNGAJ6XMImF63VbkO7484uEJDQOMi0a0DfF5zfD9Vs2b5FWZLPyUOFjIczd-SJpVis-mVou2kUOHTOZSzv1LjKUfbq39bV0PXTArxQgD0sSgABr3SloVs_h6IrTF1U1fOP9AJMjokW4eNdGsHUU_gaDr_1O8oMiw0FitFUPc2k"/>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-surface bg-stone-300 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young man smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4W26mUUZ9TZ_gOqCSovVrEawwZI8wkSSnPhvYNkHTL_1duVgq-XRZhdrLT_hJaA5xESpt2GSxSTEDlD_rIpMslecyVTyWVDOLKDiKGrpsaO4M9MhbRNdzJdvXf-wHMlgwOlq5yYwcRsJ3GIs53xJbz6yRR72A2CzJjq5hn3W2zB4tWLqfFCsNSZpzLAN7lGpd-Whok-zvE1bYHT8ErHoZrH4mt7jdMLKjEtJ027sHZHpTjwNQGND6axONb_e2FRUMnezmyDdS4wU"/>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-surface bg-primary-container flex items-center justify-center text-on-primary-container font-bold text-xs">+120</div>
+</div>
+</div>
+<!-- Calligraphy / Art Session -->
+<div class="md:col-span-8 relative rounded-3xl overflow-hidden group min-h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Traditional Arabic calligraphy session with ink and bamboo pens on textured paper, soft lighting on a wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDimOxri2yaL-xJ6gBEYcqsE9MlkRpKFPdZdyrte8dumZY3Itvg5C5aG7g_In0c3G8-8uUWQZwcOjuPLmCK6tuRvJ8R50YTpcjLhBPbLK716MHU85f0B84aOaq1PP7zj-XVIJy7SEktEGgz1KOThXGlmZOcjiq1aMdSAexfs2ST94F9-KqmB7Htw6T7rQvkafQX-lpcKxC7pl8Wt9ZoIQftY_pPNuOtRmrqW0V7SFuhakOl1eQ5Nr6B8LHg--gNu85XNif3osxmw98"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-stone-900/20 to-transparent flex flex-col justify-end p-10">
+<h3 class="text-white text-3xl font-bold mb-2">Workshop Kaligrafi &amp; Tipografi</h3>
+<p class="text-stone-200 max-w-md">Menyelami estetika huruf sebagai media dakwah yang elegan dan penuh filosofi.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Values / Features Row -->
+<section class="py-20 bg-surface-container-low/30 px-8">
+<div class="max-w-screen-2xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="text-4xl font-bold text-primary mb-4">Mengapa Mengikuti Ekstra di IDDC?</h2>
+<p class="text-on-surface-variant">Kami tidak hanya mencetak desainer handal, tapi insan yang memiliki integritas dan visi keumatan yang kuat.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="text-center space-y-4">
+<div class="w-16 h-16 bg-white shadow-sm rounded-2xl flex items-center justify-center mx-auto text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="brush">brush</span>
+</div>
+<h4 class="text-xl font-bold text-on-surface">Ekspresi Tanpa Batas</h4>
+<p class="text-on-surface-variant text-sm">Fasilitas studio yang lengkap untuk mendukung segala bentuk eksperimen visual Anda.</p>
+</div>
+<div class="text-center space-y-4">
+<div class="w-16 h-16 bg-white shadow-sm rounded-2xl flex items-center justify-center mx-auto text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="volunteer_activism">volunteer_activism</span>
+</div>
+<h4 class="text-xl font-bold text-on-surface">Khidmat Masyarakat</h4>
+<p class="text-on-surface-variant text-sm">Proyek desain nyata untuk membantu masjid, panti asuhan, dan UMKM lokal secara cuma-cuma.</p>
+</div>
+<div class="text-center space-y-4">
+<div class="w-16 h-16 bg-white shadow-sm rounded-2xl flex items-center justify-center mx-auto text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h4 class="text-xl font-bold text-on-surface">Mentoring Eksklusif</h4>
+<p class="text-on-surface-variant text-sm">Bimbingan langsung dari desainer profesional yang juga merupakan praktisi dakwah.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-stone-100 border-t border-stone-200">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 gap-6 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-3">
+<img alt="IDDC Logo" class="h-14 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugC4muM14Ubc8vkFPIz3ZER83EM2zt7YxmTEYpy-aocC4GgBgqkDBb_5TqirK1edP4AzG46PsQvjtWvr6w7z1IhJVowUD2BIEVesnMyRbseGi0yEz_MF_GWb71jpdYn9jrbF_wl728-HcH_281KGka__-wXuS3Rl47cLnxpWKAJ-or1gF0PEWqkhojL4tQCz-9pRoShKbrAjvcTQjZbArIKIJsImPWrog1B5ycrL5u0GVExTLXDXtYqlOpiskyqSCcdAyXbtP1E"/>
+</div>
+<p class="text-stone-500 font-sans text-sm tracking-wide text-center md:text-left">
+                © 2024 Islamic Design &amp; Dakwah College (IDDC). Rooted in Faith, Designed for Humanity.
+            </p>
+<div class="flex gap-6">
+<a class="text-stone-500 hover:text-emerald-600 transition-colors text-sm font-sans tracking-wide" href="#">Hubungi Kami</a>
+<a class="text-stone-500 hover:text-emerald-600 transition-colors text-sm font-sans tracking-wide" href="#">Kebijakan Privasi</a>
+<a class="text-stone-500 hover:text-emerald-600 transition-colors text-sm font-sans tracking-wide" href="#">Peta Situs</a>
+</div>
+</div>
+</footer>
+</body></html>
